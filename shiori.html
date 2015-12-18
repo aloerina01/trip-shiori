@@ -1,0 +1,110 @@
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Shiori</title>
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="shiori.css">
+</head>
+<body>
+	<div id="return-top-button" class="display-none" onClick="home();">
+		<i class="material-icons">arrow_upward</i>
+	</div>
+	<!-- top -->
+	<div id="top" class="screen full-screen">
+		<div class="area area-logo">Shiori</div>
+		<div class="area area-menu">
+			<div class="menu-button menu-button-outline">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" onClick="toOutline();">
+					<i class="material-icons">explore</i>
+				</button>
+				<div class="label">Outline</div>
+			</div>
+			<div class="menu-button menu-button-location">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" onClick="toLocation();">
+					<i class="material-icons">place</i>
+				</button>
+				<div class="label">Location</div>
+			</div>
+			<div class="menu-button menu-button-members">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" onClick="toMembers();">
+					<i class="material-icons">people</i>
+				</button>
+				<div class="label">Members</div>
+			</div>
+			<div class="menu-button menu-button-memories">
+				<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" onClick="toMemories();">
+					<i class="material-icons">favorite</i>
+				</button>
+				<div class="label">Memories</div>
+			</div>
+		</div>
+	</div>
+	<!-- outline -->
+	<div id="outline" class="screen full-screen">
+		<div class="area area-title outline">
+			OUTLINE
+		</div>
+		<div class="area area-contents outline no-contents">
+			<div><i class="material-icons">explore</i></div>
+			<div class="label">Comming soon...</div>
+		</div>
+	</div>
+	<!-- location -->
+	<div id="location" class="screen full-screen">
+		<div class="area area-title location">
+			LOCATION
+		</div>
+		<div class="area area-contents location no-contents">
+			<div><i class="material-icons">place</i></div>
+			<div class="label">Comming soon...</div>
+		</div>
+	</div>
+	<!-- members -->
+	<div id="members" class="screen full-screen">
+		<div class="area area-title members">
+			MEMBERS
+		</div>
+		<div class="area area-contents members">
+			<div class="row-member">
+				<div class="icon"><img src="morita.jpg"></div>
+				<div class="labels">
+					<div class="name">Kazuaki Morita</div>
+					<div class="explain">No problem from the side Gorilla.</div>
+				</div>
+			</div>
+			<div class="row-member">
+				<div class="icon"><img src="yamada.jpg"></div>
+				<div class="labels">
+					<div class="name">Ponta Yamada</div>
+					<div class="explain">The best of Ponta.</div>
+				</div>
+			</div>
+			<div class="row-member">
+				<div class="icon"><img src="otsuki.jpg"></div>
+				<div class="labels">
+					<div class="name">Tomoaki Ootsuki</div>
+					<div class="explain">Web director.</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- memories -->
+	<div id="memories" class="screen full-screen">
+		<div class="area area-title memories">
+			MEMORIES
+		</div>
+		<div class="area area-contents memories no-contents">
+			<div><i class="material-icons">favorite</i></div>
+			<div class="label">Please look forword to it !</div>
+		</div>
+	</div>
+	
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="common.js" async></script>
+</body>
+</html>
