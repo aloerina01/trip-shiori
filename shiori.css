@@ -69,6 +69,7 @@ body {
     background: linear-gradient(to bottom, #EAECC6, #F0CB35);
 }
 
+/* common */
 .area {
 	position: relative;
 	width: 100%;
@@ -82,6 +83,21 @@ body {
 	color: #fff;
 	text-shadow: 2px 2px 2px #555;
 }
+.area.area-title {
+	top: 15%;
+	text-align: center;
+	color: #fff;
+	font-size: 2.1rem;
+	text-shadow: 2px 2px 2px #555;
+}
+.area.area-contents {
+	top: 25%;
+	margin : 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+/* menu (top) */
 .area.area-menu {
 	display: flex;
 	margin: 16px auto;
@@ -109,16 +125,15 @@ body {
 	color: #fff;
 	text-shadow: 2px 2px 2px #555;
 }
-.area.area-title {
-	top: 20%;
-	text-align: center;
-	color: #fff;
-	font-size: 2.1rem;
-	text-shadow: 2px 2px 2px #555;
+
+/* members */
+.area.area-title.members {
+	top: 15%;
 }
 .area.area-contents.members {
 	margin: 20px auto 0 auto;
-	top: 30%;
+	top: 25%;
+	flex-direction: column;
 }
 .area.area-contents.members .row-member {
 	position: relative;
@@ -126,7 +141,7 @@ body {
 	align-items: center;
 	justify-content: flex-start;
 	width: 310px;
-	margin: 32px auto;
+	margin: 24px auto;
 }
 .area.area-contents.members .row-member .icon {
 	width: 64px;
@@ -148,6 +163,44 @@ body {
 	font-size: 1.7rem;
 	line-height: 2.1rem;
 }
+
+/* location screen */
+.area.area-contents.location .demo-card-square.mdl-card {
+	width: 75%;
+	height: 65%;
+}
+.area.area-contents.location .demo-card-square > .mdl-card__title {
+  background:
+    url('http://www.yunishigawa.co.jp/facilities/gallery/img_gallery_bg07.jpg') top left 15% no-repeat;
+  background-size:cover;
+}
+.area.area-contents.location .demo-card-square > .mdl-card__title .mdl-card__title-text a {
+	text-decoration: none !important;
+	color: #fff !important;
+  	text-shadow: 2px 2px 5px #555 !important;
+}
+@media screen and (max-width: 479px) {
+	.area.area-contents.location .demo-card-square.mdl-card {
+		width: 75%;
+		height: 60%;
+	}
+	.area.area-contents.location .demo-card-square > .mdl-card__title {
+		color: #fff;
+		text-shadow: 2px 2px 5px #555;
+		background:
+			url('http://www.yunishigawa.co.jp/facilities/gallery/img_gallery_bg07.jpg') top right 15% no-repeat;
+		background-size: cover;
+	}
+	.area.area-contents.location .demo-card-square > .mdl-card__title .mdl-card__title-text {
+		font-size: 18px;
+	}
+}
+
+/* comming soon contents */
+.area.area-title.no-contents {
+	//
+}
+
 .area.area-contents.no-contents {
 	display: flex;
 	flex-direction: column;
