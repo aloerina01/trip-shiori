@@ -1,21 +1,25 @@
 function toOutline() {
 	$("html,body").animate({scrollTop:$('#outline').offset().top});
 	showReturnButton();
+	location.hash = 'outline';
 };
 
 function toMembers() {
 	$("html,body").animate({scrollTop:$('#members').offset().top});
 	showReturnButton();
+	location.hash = 'members';
 };
 
 function toLocation() {
 	$("html,body").animate({scrollTop:$('#location').offset().top});
 	showReturnButton();
+	location.hash = 'location';
 };
 
 function toMemories() {
 	$("html,body").animate({scrollTop:$('#memories').offset().top});
 	showReturnButton();
+	location.hash = 'memories';
 };
 
 function home() {

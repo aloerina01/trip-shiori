@@ -84,14 +84,12 @@ body {
 	text-shadow: 2px 2px 2px #555;
 }
 .area.area-title {
-	top: 15%;
-	text-align: center;
+	text-align: left;
 	color: #fff;
-	font-size: 2.1rem;
-	text-shadow: 2px 2px 2px #555;
+	font-size: 1.7rem;
+	padding: 20px;
 }
 .area.area-contents {
-	top: 25%;
 	margin : 0 auto;
 	display: flex;
 	justify-content: center;
@@ -127,13 +125,10 @@ body {
 }
 
 /* members */
-.area.area-title.members {
-	top: 15%;
-}
 .area.area-contents.members {
-	margin: 20px auto 0 auto;
-	top: 25%;
 	flex-direction: column;
+	align-items: center;
+	height: 90%;
 }
 .area.area-contents.members .row-member {
 	position: relative;
@@ -207,7 +202,7 @@ body {
 	justify-content: center;
 	margin: 0 auto;
 	text-align: center;
-	top: 40%;
+	top: 30%;
 }
 
 .area.area-contents.no-contents i {
