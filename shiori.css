@@ -2,6 +2,10 @@ body {
 	font-family: 'Noto Sans', sans-serif;
 }
 
+a {
+	text-decoration: none !important;
+}
+
 #return-top-button {
 	position: fixed;
 	bottom: 16px;
@@ -124,11 +128,38 @@ body {
 	text-shadow: 2px 2px 2px #555;
 }
 
+/* outline */
+.area.area-contents.outline {
+	flex-direction: column;
+	align-items: left;
+	height: 90%;
+}
+.area.area-contents.outline .outline-row {
+	display: flex;
+	align-items: center;
+	margin: 16px 32px;
+}
+.area.area-contents.outline .outline-row .icon {
+	color: #7f7f7f;
+	padding: 0 8px 0 0;
+	font-size: 2.1rem;
+}
+.area.area-contents.outline .outline-row .text .main {
+	font-size: 1.4rem;
+	/*color: #fff;*/
+}
+.area.area-contents.outline .outline-row .text .sub {
+	color: #7f7f7f;
+	font-size: 0.8rem;
+	line-height: 0.8rem;
+}
+
 /* members */
 .area.area-contents.members {
 	flex-direction: column;
 	align-items: center;
 	height: 90%;
+	font-size: 1.4rem;
 }
 .area.area-contents.members .row-member {
 	position: relative;
@@ -158,8 +189,15 @@ body {
 	font-size: 1.7rem;
 	line-height: 2.1rem;
 }
+.area.area-contents.members .row-member .labels .explain {
+	font-size: 1.0rem;
+	line-height: 2.1rem;
+}
 
 /* location screen */
+.area.area-contents.location {
+	top: 10%;
+}
 .area.area-contents.location .demo-card-square.mdl-card {
 	width: 75%;
 	height: 65%;
